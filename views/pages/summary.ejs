@@ -1,0 +1,14 @@
+<header>
+  <h1><%= vehicleName%></h1>
+  <%- include("../layout/navigation") %>
+</header>
+
+<main>
+  <section class="description">
+    <!-- description of site -->
+    <p>This is the summary page for <%= vehicleName %>.</p>
+
+    <h3>Top up</h3>
+    <a href="/fueling/<%= vehicle %>">Add fuel top up</a>
+  </section>
+</main>

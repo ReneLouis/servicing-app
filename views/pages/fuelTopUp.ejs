@@ -1,0 +1,46 @@
+<header>
+  <h1><%= vehicleName%></h1>
+</header>
+
+<main>
+  <section class="description">
+    <!-- description of site -->
+    <%- include("../layout/navigation") %>
+    <p>Add a fuel top up for <%= vehicleName %>.</p>
+
+  </section>
+
+  <section id="content" class="form">
+    <!-- main picture -->
+    <h3>Petrol top up</h3>
+    <form class="fuel-form" method="POST" action="/fueling/<%=vehicle %> ">
+      <label for="date">Date:</label> </br>
+      <input 
+        type="date" 
+        id="date" 
+        name="date" 
+        placeholder="Date" 
+      /><br />
+      <br />
+
+      <label for="name">Quantity:</label><br />
+      <input
+        type="number"
+        step="0.01"
+        id="quantity"
+        name="quantity"
+        placeholder="0.00 Litre"
+      /><br /><br />
+
+      <label for="mileage">Mileage:</label><br />
+      <input
+        type="number"
+        step="0.1"
+        id="mileage"
+        name="mileage"
+        placeholder="Mileage since last top-up"
+      /><br />
+      <input type="submit" value="Click me to submit!" id="submit" />
+    </form>
+  </section>
+</main>

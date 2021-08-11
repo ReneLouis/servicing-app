@@ -1,0 +1,72 @@
+<!--<html>-->
+<!DOCTYPE html>
+<html lang="en-GB" dir="ltr">
+  <head>
+    <title>Log for <%= vehicleName%></title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="René Louis" />
+    <meta name="description" content="Maintenance log for selected vehicle" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" href="stylesheet.css" type="text/css" media="all"> -->
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement("picture");
+    </script>
+    <script src="js/picturefill.min.js" async></script>
+    <!-- <script src="js/fuelTopUp.js" defer></script> -->
+  </head>
+
+  <body>
+    <a hidden class="skip-link screen-reader-text" href="#content"
+      >Skip to content</a
+    >
+    <header>
+      <h1><%= vehicleName%></h1>
+    </header>
+
+    <main>
+      <section class="description">
+        <!-- description of site -->
+        <%- include("../layout/navigation") %>
+        <p>Add a fuel top up for <%= vehicleName %>.</p>
+
+      </section>
+
+      <section id="content" class="form">
+        <!-- main picture -->
+        <h3>Petrol top up</h3>
+        <form class="fuel-form" method="POST" action="/<%=vehicle %> ">
+          <label for="date">Date:</label> </br>
+          <input 
+            type="date" 
+            id="date" 
+            name="date" 
+            placeholder="Date" 
+          /><br />
+          <br />
+
+          <label for="name">Quantity:</label><br />
+          <input
+            type="number"
+            step="0.01"
+            id="quantity"
+            name="quantity"
+            placeholder="0.00 Litre"
+          /><br /><br />
+
+          <label for="mileage">Mileage:</label><br />
+          <input
+            type="number"
+            step="0.1"
+            id="mileage"
+            name="mileage"
+            placeholder="Mileage since last top-up"
+          /><br />
+          <input type="submit" value="Click me to submit!" id="submit" />
+        </form>
+      </section>
+    </main>
+    <!-- .main-area -->
+    <nav></nav>
+  </body>
+</html>
