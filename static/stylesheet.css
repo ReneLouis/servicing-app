@@ -54,13 +54,15 @@ section.vehicle-box > h4 {
   flex: 2 1 200px;
 }
 section.vehicle-box > div.links {
-  flex: 1 0 10rem;
+  flex: 0 1 12rem;
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 section.vehicle-box > div.links > a {
-  display: block;
-  flex: 1 0 50%;
+  /* display: block; */
+  flex: 1 0 5.5rem;
+  border: 1px yellow;
 }
 
 p,
