@@ -15,38 +15,6 @@
       ]
     },
     {
-      "name": "Poppadom3",
-      "shortName": "Poppadom3",
-      "fuelTopUp": [
-        { "date": "2021-08-11", "quantity": 0, "mileage": 0 },
-        { "date": "2021-08-11", "quantity": 43.67, "mileage": 432 },
-        { "date": "2021-08-11", "quantity": 43.67, "mileage": 432 },
-        { "date": "2021-08-11", "quantity": 43.67, "mileage": 432 },
-        { "date": "2021-08-11", "quantity": 1, "mileage": 32 },
-        { "date": "2021-08-11", "quantity": 32.54, "mileage": 65.8 },
-        { "date": "2021-08-11", "quantity": 12.98, "mileage": 65.8 },
-        { "date": "2021-08-11", "quantity": 12.98, "mileage": 65.8 },
-        { "date": "2021-07-30", "quantity": 2.3, "mileage": 45.6 }
-      ]
-    },
-    {
-      "name": "TestVehicle3",
-      "shortName": "TestVehicle3",
-      "fuelTopUp": [
-        { "date": "2021-08-11", "quantity": 67.98, "mileage": 1224.8 },
-        { "date": "2021-07-01", "quantity": 7.87, "mileage": 65.8 },
-        { "date": "2021-06-29", "quantity": 4.9, "mileage": 98 }
-      ]
-    },
-    {
-      "name": "Test Vehicle 1",
-      "shortName": "Test_Vehicle_1",
-      "fuelTopUp": [
-        { "date": "2021-08-05", "quantity": 12.34, "mileage": 124.5 },
-        { "date": "2021-08-03", "quantity": 13.65, "mileage": 76.8 }
-      ]
-    },
-    {
       "name": "Volvo Estate",
       "shortName": "Volvo_Estate",
       "fuelTopUp": [
@@ -61,13 +29,6 @@
       "name": "Ducati Multistrada",
       "shortName": "Ducati_Multistrada",
       "fuelTopUp": []
-    },
-    {
-      "name": "monter truck",
-      "shortName": "monter_truck",
-      "fuelTopUp": [
-        { "date": "2021-08-11", "quantity": 6527521.87, "mileage": 4.6 }
-      ]
     }
   ]
 }

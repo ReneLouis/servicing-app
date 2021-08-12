@@ -14,8 +14,10 @@
     <% vehicleList.forEach(function(e) { %>
         <section class="vehicle-box">
           <h4><%= e.name%>: </h4>
-          <a href="/summary/<%= e.shortName %>">Summary</a>
-          <a href="/fueling/<%= e.shortName %>">Fuel Top-Up</a> 
+          <div class="links">
+            <a href="/summary/<%= e.shortName %>">Summary</a>
+            <a href="/fueling/<%= e.shortName %>">Fuel Top-Up</a> 
+          </div>
         </section>
       
     <% }) %>
