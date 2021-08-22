@@ -9,6 +9,24 @@
     <p>This is the summary page for <%= vehicleName %>.</p>
 
     <h3>Top up</h3>
+    <% if (fuellingData) { %>
+    <h4>Details last topup</h4>
+    <!-- add logic for empty data -->
+    <p>
+      date: <%= vehicleData.fuelTopUp[0].date%> - Fuel consumption: <%=
+      vehicleEconomy.mpg %> MPG / <%= vehicleEconomy.lphkm %> L/100km
+    </p>
+
+    <h4>Average fuel consumption</h4>
+    <p>Average fuel consumption for <%= vehicleName%>:</p>
+
+    <p><%= vehicleEconomyTotal.mpg%> mpg</p>
+    <p><%= vehicleEconomyTotal.lphkm%> L / 100km</p>
+    <% } else if (!fuellingData) {%>
+    <p>No fuel data for <% vehicleName%></p>
+    <% } %>
+
+    <h4>Add top up</h4>
     <a href="/fueling/<%= vehicle %>">Add fuel top up</a>
   </section>
 </main>

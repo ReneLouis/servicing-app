@@ -45,6 +45,12 @@ main {
   padding: 0.5rem;
 }
 
+h1,
+h3 {
+  color: var(--border);
+  text-shadow: whitesmoke 0.2rem 0.2rem 1rem;
+}
+
 section.vehicle-box {
   display: flex;
   flex-wrap: wrap;
@@ -68,8 +74,4 @@ section.vehicle-box > div.links > a {
 p,
 h4 {
   color: var(--text);
-}
-h1,
-h3 {
-  color: var(--highlight);
 }

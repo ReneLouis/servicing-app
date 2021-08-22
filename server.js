@@ -8,28 +8,17 @@ const bodyParser = require("body-parser");
 /* MODULE TO CHECK AND VALIDATE DATA ENTERED ON FORM */
 const { check, validationResult } = require("express-validator");
 
-// const fuelTopUp = require("./HondaCBF/js/assets/fuelTopUp.json");
-const fuelUpdate = require("./assets/js/fuelUpdate");
+// const functions = require("./assets/js/functions");
+const fuelPage = require("./assets/js/fuelPage");
 const newVehicle = require("./assets/js/newVehicle");
+const summary = require("./assets/js/summary");
 
 const app = express();
 const port = process.env.PORT || 1971;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-/*  === SETUP FUNCTION TO CREATE / UPDATE DATA FRON JSON === */
-let data = fs.readFileSync("./assets/json/fuelTopUp.json");
-let myObj = JSON.parse(data);
-let vehicleIndx = -1;
-const loadVehicles = function (vehicle) {
-  return new Promise((resolve, reject) => {
-    data = fs.readFileSync("./assets/json/fuelTopUp.json");
-    myObj = JSON.parse(data);
-    vehicleIndx = myObj.vehicles.findIndex((e) => e.shortName === vehicle);
-    console.log(`R E S O L V E D ! | vehicleIndx = ${vehicleIndx}`);
-    resolve();
-  });
-};
+// let vehicleIndx = -1;
 
 /* SETUP EJS TEMPLATE */
 app.set("view engine", "ejs");
@@ -43,7 +32,14 @@ app.use(express.static(path.join(__dirname, "static")));
  * BELOW MIDDLEWARE FEED ALL IN ROOT FOLDER "./" TO THE SERVER: */
 // app.use(express.static(path.join(__dirname, "./HondaCBF/index.html")));
 
-/*  W E L C O M E   P A G E */
+/*  ========================================================*/
+/*  ================= LOAD DATA FRON JSON ================= */
+let data = fs.readFileSync("./assets/json/fuelTopUp.json");
+let myObj = JSON.parse(data);
+
+/*  ========================================================*/
+/*  =============  W E L C O M E   P A G E ================ */
+
 app.get("/", (req, res) => {
   res.render("layout", {
     pageTitle: "Welcome",
@@ -52,35 +48,16 @@ app.get("/", (req, res) => {
   });
 });
 
-app.post(
-  "/",
-  [check("name").trim().escape()], // (req, res) => {
-  //   let vehicleName = req.body.name;
-  //   let vehicleShortName = vehicleName.trim().split(" ").join("_");
-  //   console.log(vehicleShortName);
-  //   // res.send(`Sent response from /. New vehicle is ${vehicleName}`);
-  //   console.log(req.body);
-  //   res.redirect(path.join("/", vehicleShortName));
-  // }
-  newVehicle
-);
+app.post("/", [check("name").trim().escape()], newVehicle);
 
-app.get("/fueling/:vehicle", (req, res) => {
-  loadVehicles(req.params.vehicle);
-  // console.log("loadVehicle launched from Route /:vehicle");
-  if (vehicleIndx !== -1) {
-    res.render("layout", {
-      pageTitle: "Fuel Top Up | " + myObj.vehicles[vehicleIndx].name,
-      template: "fuelTopUp",
-      vehicle: req.params.vehicle,
-      vehicleName: myObj.vehicles[vehicleIndx].name,
-    });
-  } else {
-    res.redirect(path.join("/"));
-  }
-});
+/*  ====================================================== */
+/*  =============== F U E L I N G   P A G E ===============*/
 
-/* PROCESS DATA ENTERED ON FORM */
+/*  GET REQUEST ON FUELING PAGE */
+
+app.get("/fueling/:vehicle", fuelPage.fuelPage);
+
+/*  PROCESS DATA ENTERED ON FUALING PAGE */
 
 app.post(
   "/fueling/:vehicle",
@@ -88,28 +65,25 @@ app.post(
     check("date")
       .trim() // remove empty characters at beginning and end
       .escape() // remove any html
-      .isDate(),
-    check("quantity").trim().escape().isDecimal({ decimal_digits: 2 }),
-    check("quantity").trim().escape().isDecimal({ decimal_digits: 1 }),
+      .isDate()
+      .notEmpty(),
+    check("quantity")
+      .trim()
+      .escape()
+      .isDecimal({ decimal_digits: 2 })
+      .notEmpty(),
+    check("quantity")
+      .trim()
+      .escape()
+      .isDecimal({ decimal_digits: 1 })
+      .notEmpty(),
   ],
-  fuelUpdate
+  fuelPage.fuelUpdate
 );
 
+/*  ==================================== */
 /*  ROUTE ON SUMMARY PAGE */
-app.get("/summary/:vehicle", async (req, res) => {
-  await loadVehicles(req.params.vehicle); // set data, myObj & vehicleIndx
-  // console.log("loadVehicle launched from /summary/" + req.params.vehicle);
-  if (vehicleIndx !== -1) {
-    res.render("layout", {
-      pageTitle: "Summary | " + myObj.vehicles[vehicleIndx].name,
-      template: "summary",
-      vehicle: req.params.vehicle,
-      vehicleName: myObj.vehicles[vehicleIndx].name,
-    });
-  } else {
-    res.redirect(path.join("/"));
-  }
-});
+app.get("/summary/:vehicle", summary);
 
 app.listen(port, () => {
   console.log(`Express is now listening on port ${port}`);
