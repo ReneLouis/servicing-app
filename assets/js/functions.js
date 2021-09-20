@@ -51,7 +51,7 @@ const consumptionTotal = function (object) {
   let kmTotal = 0;
   for (let i = 0; i < object.fuelTopUp.length; i++) {
     qTotal += object.fuelTopUp[i].quantity;
-    if (object.fuelTopUp.unit === "km") {
+    if (object.fuelTopUp[i].unit === "km") {
       kmTotal += object.fuelTopUp[i].distance;
     } else if (object.fuelTopUp[i].unit === "miles") {
       kmTotal += object.fuelTopUp[i].distance * 1.609;

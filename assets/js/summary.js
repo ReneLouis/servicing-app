@@ -29,7 +29,7 @@ const summary = async (req, res, next) => {
         qTotal +=
           functions.myObj.vehicles[functions.vehicleIndx].fuelTopUp[i].quantity;
         if (
-          functions.myObj.vehicles[functions.vehicleIndx].fuelTopUp.unit ===
+          functions.myObj.vehicles[functions.vehicleIndx].fuelTopUp[i].unit ===
           "km"
         ) {
           kmTotal +=
@@ -44,6 +44,7 @@ const summary = async (req, res, next) => {
               .distance * 1.609;
         }
       }
+      console.log(`qTotal: ${qTotal} ; kmTotal: ${kmTotal}`);
       ecoTotal = functions.consumtion(qTotal, kmTotal, "km");
       // let ecoTotal = functions.consumptionTotal(functions.vehicleIndx);
     } else {

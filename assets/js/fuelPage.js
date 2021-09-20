@@ -113,6 +113,7 @@ let fuelUpdate = async (req, res, next) => {
     vehicleData: myObj.vehicles[vehicleIndex],
     vehicleEconomy: ecoLastTopUp,
     vehicleEconomyTotal: ecoTotal,
+    fuellingData: true,
   });
 
   // function sleep() {

@@ -43,6 +43,12 @@
       "name": "Poppadom3",
       "shortName": "Poppadom3",
       "fuelTopUp": [
+        {
+          "date": "2021-08-22",
+          "quantity": 43,
+          "distance": 44,
+          "unit": "miles"
+        },
         { "date": "2021-08-16", "quantity": 10, "distance": 100, "unit": "km" },
         { "date": "2021-08-16", "quantity": 10, "distance": 100, "unit": "km" },
         { "date": "2021-08-16", "quantity": 10, "distance": 100, "unit": "km" },
@@ -68,37 +74,19 @@
           "quantity": 1,
           "distance": 500,
           "unit": "miles"
-        },
-        {
-          "date": "2021-08-13",
-          "quantity": 1,
-          "distance": null,
-          "unit": "miles"
-        },
-        {
-          "date": "2021-08-13",
-          "quantity": 1,
-          "distance": null,
-          "unit": "miles"
-        },
-        { "date": "2021-08-13", "quantity": 54, "mileage": 12, "unit": "km" },
-        { "date": "2021-08-12", "quantity": 0, "mileage": 0, "unit": "miles" },
-        { "date": "2021-08-14", "quantity": 9, "mileage": 9 },
-        { "date": "2021-08-11", "quantity": 0, "mileage": 0 },
-        { "date": "2021-08-11", "quantity": 43.67, "mileage": 432 },
-        { "date": "2021-08-11", "quantity": 43.67, "mileage": 432 },
-        { "date": "2021-08-11", "quantity": 43.67, "mileage": 432 },
-        { "date": "2021-08-11", "quantity": 1, "mileage": 32 },
-        { "date": "2021-08-11", "quantity": 32.54, "mileage": 65.8 },
-        { "date": "2021-08-11", "quantity": 12.98, "mileage": 65.8 },
-        { "date": "2021-08-11", "quantity": 12.98, "mileage": 65.8 },
-        { "date": "2021-07-30", "quantity": 2.3, "mileage": 45.6 }
+        }
       ]
     },
     {
       "name": "Volvo Estate",
       "shortName": "Volvo_Estate",
       "fuelTopUp": [
+        {
+          "date": "2021-08-22",
+          "quantity": 13.87,
+          "distance": 143.8,
+          "unit": "km"
+        },
         { "date": "2021-08-16", "quantity": 5, "distance": 4, "unit": "miles" },
         { "date": "2021-08-16", "quantity": 5, "distance": 4, "unit": "miles" },
         { "date": "2021-08-16", "quantity": 5, "distance": 4, "unit": "miles" },
@@ -190,7 +178,14 @@
     {
       "name": "Ducati Multistrada",
       "shortName": "Ducati_Multistrada",
-      "fuelTopUp": []
+      "fuelTopUp": [
+        {
+          "date": "2021-09-20",
+          "quantity": 12,
+          "distance": 143,
+          "unit": "miles"
+        }
+      ]
     }
   ]
 }
