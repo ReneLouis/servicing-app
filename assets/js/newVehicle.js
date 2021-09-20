@@ -23,7 +23,16 @@ newVehicle = async (req, res) => {
   let myObj = JSON.parse(data);
 
   if (!myObj.vehicles.some((e) => e.name == vehicleName)) {
-    myObj.vehicles.push(new Vehicle(vehicleName, vehicleShortName));
+    // NEW
+    let newData = {
+      name: vehicleName,
+      shortName: vehicleShortName,
+      fuelTopUp: [],
+      delete: true,
+    };
+    // END
+    // myObj.vehicles.push(new Vehicle(vehicleName, vehicleShortName));
+    myObj.vehicles.push(newData);
     data = JSON.stringify(myObj);
     fs.writeFile("./assets/json/fuelTopUp.json", data, (err) => {
       if (err) throw err;
