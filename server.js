@@ -34,13 +34,15 @@ app.use(express.static(path.join(__dirname, "static")));
 
 /*  ========================================================*/
 /*  ================= LOAD DATA FRON JSON ================= */
-let data = fs.readFileSync("./assets/json/fuelTopUp.json");
-let myObj = JSON.parse(data);
+// let data = fs.readFileSync("./assets/json/fuelTopUp.json");
+// let myObj = JSON.parse(data);
 
 /*  ========================================================*/
 /*  =============  W E L C O M E   P A G E ================ */
 
 app.get("/", (req, res) => {
+  let data = fs.readFileSync("./assets/json/fuelTopUp.json");
+  let myObj = JSON.parse(data);
   res.render("layout", {
     pageTitle: "Welcome",
     template: "index",

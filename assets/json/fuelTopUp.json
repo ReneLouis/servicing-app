@@ -1,1 +1,191 @@
-{"sample":true,"name":"Maintenance Log","description":"A log of petrol ","vehicles":[{"name":"Honda CBF1000A","shortName":"Honda_CBF1000A","fuelTopUp":[{"date":"2021-07-17","quantity":11.44,"distance":144.7,"unit":"miles"},{"date":"2021-07-16","quantity":15.74,"distance":198.3,"unit":"miles"},{"date":"2021-04-17","quantity":10.04,"distance":175.8,"unit":"miles"},{"date":"2021-04-04","quantity":7.53,"distance":77.7,"unit":"miles"},{"date":"2021-03-07","quantity":9.57,"distance":97.1,"unit":"miles"}]},{"name":"Poppadom3","shortName":"Poppadom3","fuelTopUp":[{"date":"2021-08-22","quantity":43,"distance":44,"unit":"miles"},{"date":"2021-08-16","quantity":10,"distance":100,"unit":"km"},{"date":"2021-08-16","quantity":10,"distance":100,"unit":"km"},{"date":"2021-08-16","quantity":10,"distance":100,"unit":"km"},{"date":"2021-08-16","quantity":10,"distance":100,"unit":"km"},{"date":"2021-08-16","quantity":10,"distance":100,"unit":"km"},{"date":"2021-08-16","quantity":10,"distance":100,"unit":"km"},{"date":"2021-08-16","quantity":10,"distance":100,"unit":"km"},{"date":"2021-08-16","quantity":10,"distance":100,"unit":"km"},{"date":"2021-08-16","quantity":10,"distance":100,"unit":"km"},{"date":"2021-08-16","quantity":0,"distance":0,"unit":"miles"},{"date":"2021-08-16","quantity":43.76,"distance":124.6,"unit":"miles"},{"date":"2021-08-12","quantity":0,"distance":0,"unit":"miles"},{"date":"","quantity":0,"distance":0,"unit":"miles"},{"date":"2021-08-13","quantity":54,"distance":45,"unit":"km"},{"date":"2021-08-13","quantity":54,"distance":45,"unit":"km"},{"date":"2021-08-13","quantity":1,"distance":500,"unit":"miles"}]},{"name":"Volvo Estate","shortName":"Volvo_Estate","fuelTopUp":[{"date":"2021-08-22","quantity":13.87,"distance":143.8,"unit":"km"},{"date":"2021-08-16","quantity":5,"distance":4,"unit":"miles"},{"date":"2021-08-16","quantity":5,"distance":4,"unit":"miles"},{"date":"2021-08-16","quantity":5,"distance":4,"unit":"miles"},{"date":"2021-08-16","quantity":5,"distance":4,"unit":"miles"},{"date":"2021-08-16","quantity":4,"distance":4,"unit":"miles"},{"date":"2021-08-16","quantity":4,"distance":4,"unit":"miles"},{"date":"2021-08-16","quantity":4,"distance":4,"unit":"miles"},{"date":"2021-08-16","quantity":4,"distance":4,"unit":"miles"},{"date":"2021-08-16","quantity":4,"distance":4,"unit":"miles"},{"date":"2021-08-16","quantity":4,"distance":4,"unit":"miles"},{"date":"2021-08-16","quantity":0,"distance":0,"unit":"miles"},{"date":"2021-08-16","quantity":0,"distance":0,"unit":"miles"},{"date":"2021-08-16","quantity":0,"distance":0,"unit":"miles"},{"date":"2021-08-16","quantity":0,"distance":0,"unit":"miles"},{"date":"2021-08-16","quantity":4.44,"distance":4.5,"unit":"miles"},{"date":"2021-08-16","quantity":4.44,"distance":4.5,"unit":"miles"},{"date":"2021-08-16","quantity":4.44,"distance":4.5,"unit":"miles"},{"date":"2021-08-16","quantity":4.44,"distance":4.5,"unit":"miles"},{"date":"2021-08-16","quantity":4.44,"distance":4.5,"unit":"miles"},{"date":"2021-08-16","quantity":4.44,"distance":4.5,"unit":"miles"},{"date":"2021-08-16","quantity":4.44,"distance":4.5,"unit":"miles"},{"date":"","quantity":0,"distance":0,"unit":"miles"},{"date":"","quantity":0,"distance":0,"unit":"miles"},{"date":"","quantity":0,"distance":0,"unit":"miles"},{"date":"2021-08-16","quantity":5,"distance":46,"unit":"miles"},{"date":"2021-08-16","quantity":5,"distance":46,"unit":"miles"},{"date":"2021-08-16","quantity":0,"distance":0,"unit":"miles"},{"date":"2021-08-16","quantity":0,"distance":0,"unit":"miles"},{"date":"2021-08-16","quantity":0,"distance":0,"unit":"miles"},{"date":"2021-08-13","quantity":111,"distance":1111,"unit":"miles"},{"date":"2021-08-13","quantity":32.75,"distance":301.5,"unit":"miles"}]},{"name":"Ducati Multistrada","shortName":"Ducati_Multistrada","fuelTopUp":[{"date":"2021-09-20","quantity":12,"distance":143,"unit":"miles"}]},{"name":"Suzuki Alto","shortName":"Suzuki_Alto","fuelTopUp":[],"delete":true}]}
+{
+  "sample": true,
+  "name": "Maintenance Log",
+  "description": "A log of petrol ",
+  "vehicles": [
+    {
+      "name": "Honda CBF1000A",
+      "shortName": "Honda_CBF1000A",
+      "fuelTopUp": [
+        {
+          "date": "2021-07-17",
+          "quantity": 11.44,
+          "distance": 144.7,
+          "unit": "miles"
+        },
+        {
+          "date": "2021-07-16",
+          "quantity": 15.74,
+          "distance": 198.3,
+          "unit": "miles"
+        },
+        {
+          "date": "2021-04-17",
+          "quantity": 10.04,
+          "distance": 175.8,
+          "unit": "miles"
+        },
+        {
+          "date": "2021-04-04",
+          "quantity": 7.53,
+          "distance": 77.7,
+          "unit": "miles"
+        },
+        {
+          "date": "2021-03-07",
+          "quantity": 9.57,
+          "distance": 97.1,
+          "unit": "miles"
+        }
+      ]
+    },
+    {
+      "name": "Poppadom3",
+      "shortName": "Poppadom3",
+      "fuelTopUp": [
+        {
+          "date": "2021-08-22",
+          "quantity": 43,
+          "distance": 44,
+          "unit": "miles"
+        },
+        { "date": "2021-08-16", "quantity": 10, "distance": 100, "unit": "km" },
+        { "date": "2021-08-16", "quantity": 10, "distance": 100, "unit": "km" },
+        { "date": "2021-08-16", "quantity": 10, "distance": 100, "unit": "km" },
+        { "date": "2021-08-16", "quantity": 10, "distance": 100, "unit": "km" },
+        { "date": "2021-08-16", "quantity": 10, "distance": 100, "unit": "km" },
+        { "date": "2021-08-16", "quantity": 10, "distance": 100, "unit": "km" },
+        { "date": "2021-08-16", "quantity": 10, "distance": 100, "unit": "km" },
+        { "date": "2021-08-16", "quantity": 10, "distance": 100, "unit": "km" },
+        { "date": "2021-08-16", "quantity": 10, "distance": 100, "unit": "km" },
+        { "date": "2021-08-16", "quantity": 0, "distance": 0, "unit": "miles" },
+        {
+          "date": "2021-08-16",
+          "quantity": 43.76,
+          "distance": 124.6,
+          "unit": "miles"
+        },
+        { "date": "2021-08-12", "quantity": 0, "distance": 0, "unit": "miles" },
+        { "date": "", "quantity": 0, "distance": 0, "unit": "miles" },
+        { "date": "2021-08-13", "quantity": 54, "distance": 45, "unit": "km" },
+        { "date": "2021-08-13", "quantity": 54, "distance": 45, "unit": "km" },
+        {
+          "date": "2021-08-13",
+          "quantity": 1,
+          "distance": 500,
+          "unit": "miles"
+        }
+      ]
+    },
+    {
+      "name": "Volvo Estate",
+      "shortName": "Volvo_Estate",
+      "fuelTopUp": [
+        {
+          "date": "2021-08-22",
+          "quantity": 13.87,
+          "distance": 143.8,
+          "unit": "km"
+        },
+        { "date": "2021-08-16", "quantity": 5, "distance": 4, "unit": "miles" },
+        { "date": "2021-08-16", "quantity": 5, "distance": 4, "unit": "miles" },
+        { "date": "2021-08-16", "quantity": 5, "distance": 4, "unit": "miles" },
+        { "date": "2021-08-16", "quantity": 5, "distance": 4, "unit": "miles" },
+        { "date": "2021-08-16", "quantity": 4, "distance": 4, "unit": "miles" },
+        { "date": "2021-08-16", "quantity": 4, "distance": 4, "unit": "miles" },
+        { "date": "2021-08-16", "quantity": 4, "distance": 4, "unit": "miles" },
+        { "date": "2021-08-16", "quantity": 4, "distance": 4, "unit": "miles" },
+        { "date": "2021-08-16", "quantity": 4, "distance": 4, "unit": "miles" },
+        { "date": "2021-08-16", "quantity": 4, "distance": 4, "unit": "miles" },
+        { "date": "2021-08-16", "quantity": 0, "distance": 0, "unit": "miles" },
+        { "date": "2021-08-16", "quantity": 0, "distance": 0, "unit": "miles" },
+        { "date": "2021-08-16", "quantity": 0, "distance": 0, "unit": "miles" },
+        { "date": "2021-08-16", "quantity": 0, "distance": 0, "unit": "miles" },
+        {
+          "date": "2021-08-16",
+          "quantity": 4.44,
+          "distance": 4.5,
+          "unit": "miles"
+        },
+        {
+          "date": "2021-08-16",
+          "quantity": 4.44,
+          "distance": 4.5,
+          "unit": "miles"
+        },
+        {
+          "date": "2021-08-16",
+          "quantity": 4.44,
+          "distance": 4.5,
+          "unit": "miles"
+        },
+        {
+          "date": "2021-08-16",
+          "quantity": 4.44,
+          "distance": 4.5,
+          "unit": "miles"
+        },
+        {
+          "date": "2021-08-16",
+          "quantity": 4.44,
+          "distance": 4.5,
+          "unit": "miles"
+        },
+        {
+          "date": "2021-08-16",
+          "quantity": 4.44,
+          "distance": 4.5,
+          "unit": "miles"
+        },
+        {
+          "date": "2021-08-16",
+          "quantity": 4.44,
+          "distance": 4.5,
+          "unit": "miles"
+        },
+        { "date": "", "quantity": 0, "distance": 0, "unit": "miles" },
+        { "date": "", "quantity": 0, "distance": 0, "unit": "miles" },
+        { "date": "", "quantity": 0, "distance": 0, "unit": "miles" },
+        {
+          "date": "2021-08-16",
+          "quantity": 5,
+          "distance": 46,
+          "unit": "miles"
+        },
+        {
+          "date": "2021-08-16",
+          "quantity": 5,
+          "distance": 46,
+          "unit": "miles"
+        },
+        { "date": "2021-08-16", "quantity": 0, "distance": 0, "unit": "miles" },
+        { "date": "2021-08-16", "quantity": 0, "distance": 0, "unit": "miles" },
+        { "date": "2021-08-16", "quantity": 0, "distance": 0, "unit": "miles" },
+        {
+          "date": "2021-08-13",
+          "quantity": 111,
+          "distance": 1111,
+          "unit": "miles"
+        },
+        {
+          "date": "2021-08-13",
+          "quantity": 32.75,
+          "distance": 301.5,
+          "unit": "miles"
+        }
+      ]
+    },
+    {
+      "name": "Ducati Multistrada",
+      "shortName": "Ducati_Multistrada",
+      "fuelTopUp": [
+        {
+          "date": "2021-09-20",
+          "quantity": 12,
+          "distance": 143,
+          "unit": "miles"
+        }
+      ]
+    }
+  ]
+}
